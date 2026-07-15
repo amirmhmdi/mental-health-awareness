@@ -397,6 +397,32 @@ h3,
   text-shadow: 4px 4px 8px var(--night-2);
 }
 
+/* ---------------- RESOURCES ---------------- */
+ .resources{
+    background: linear-gradient(180deg, var(--night-2) 0%, #3A3F6B 100%);
+    padding: 7rem 0 6rem; color: #F4EEE0;
+  }
+  .resources .section-head h2{ color: #F4EEE0; }
+  .resources .section-head .tag{ color: var(--dawn); border-color: var(--dawn); }
+  .resources .section-head p{ color: #D9D6E8; }
+
+  .resource-btn{
+    background: var(--dawn);
+    color: #201205 !important;
+    border-radius: 16px;
+    padding: 1.1rem 1rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    text-align: center;
+    transition: transform .2s ease, background .2s ease;
+  }
+  .resource-btn:hover{ background: var(--dawn-soft); transform: translateY(-3px); }
+  .resource-btn .small{ opacity: .85; }
+
 /* ---------------- Footer ---------------- */
 
 footer {
