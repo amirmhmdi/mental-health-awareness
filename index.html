@@ -213,6 +213,32 @@
 
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Highlight the active nav link as the user scrolls through the three sections
+        const sections = document.querySelectorAll('section[id]');
+        const links = document.querySelectorAll('.nav-link-section');
+
+        const setActive = (id) => {
+            links.forEach(link => link.classList.toggle('active', link.dataset.section === id));
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) setActive(entry.target.id);
+            });
+        }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+
+        sections.forEach(sec => observer.observe(sec));
+
+        // Close the mobile menu after tapping a link
+        const mainNav = document.getElementById('mainNav');
+        const bsCollapse = mainNav ? new bootstrap.Collapse(mainNav, { toggle: false }) : null;
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (bsCollapse && mainNav.classList.contains('show')) bsCollapse.hide();
+            });
+        });
+    </script>
 </body>
 
 </html>
