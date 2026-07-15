@@ -336,32 +336,32 @@ section[id] {
 .card-signs-background1 {
   background-image:
     linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/anxiety.png");
+    url("assets/images/anxiety.png");
 }
 .card-signs-background2 {
   background-image:
     linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/low-mood.png");
+    url("assets/images/low-mood.png");
 }
 .card-signs-background3 {
   background-image:
     linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/stress.png");
+    url("assets/images/stress.png");
 }
 .card-signs-background4 {
   background-image:
     linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/talk-to-someone.png");
+    url("assets/images/talk-to-someone.png");
 }
 .card-signs-background5 {
   background-image:
     linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/move-your-body.png");
+    url("assets/images/move-your-body.png");
 }
 .card-signs-background6 {
   background-image:
     linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/build-small-routines.png");
+    url("assets/images/build-small-routines.png");
 }
 
 .card-signs:hover {
