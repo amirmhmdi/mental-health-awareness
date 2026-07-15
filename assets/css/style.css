@@ -1,0 +1,72 @@
+:root {
+  --night: #1b1f3b;
+  --night-2: #2a2f55;
+  --dawn: #f2a65a;
+  --dawn-soft: #f7d9b5;
+  --sage: #6b9080;
+  --paper: #fbf7f0;
+  --ink: #22252f;
+  --ink-soft: #5a5f71;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.85;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+  .site-navbar{
+    background: rgba(20, 23, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(244,238,224,0.1);
+  }
+  .site-navbar .navbar-brand{
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    color: #F4EEE0 !important;
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+  }
+  .site-navbar .navbar-brand .dot{
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--dawn);
+    box-shadow: 0 0 0 4px rgba(242,166,90,.18);
+    display: inline-block;
+  }
+  .site-navbar .nav-link{
+    color: #C9C6DE !important;
+    font-weight: 600;
+    font-size: .92rem;
+    padding: .55rem 1rem !important;
+    border-radius: 999px;
+    transition: background .25s ease, color .25s ease;
+  }
+  .site-navbar .nav-link:hover{ color: #F4EEE0 !important; }
+  .site-navbar .nav-link.active{
+    background: var(--dawn);
+    color: #201205 !important;
+  }
+  .site-navbar .navbar-toggler{
+    border-color: rgba(244,238,224,0.3);
+  }
+  .site-navbar .navbar-toggler:focus{ box-shadow: 0 0 0 .2rem rgba(242,166,90,.4); }
+
+/* ---------------- Footer ---------------- */
+
+footer {
+  background: #10132a;
+  color: #9c99b8;
+  font-size: 0.85rem;
+}
