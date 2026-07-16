@@ -79,6 +79,7 @@ Wireframes were created in **Balsamiq** before development began, to plan the la
 - **Positive affirmations** — a short, uplifting closing message to leave visitors feeling encouraged.
 - **Interactive elements** — hover and scroll-based animations (card lift effects, a twinkling star field, smooth scrolling, and scroll-based navigation highlighting) that add life to the page without being distracting.
 - **Accessible, semantic markup** — clear heading structure, sufficient colour contrast, and visible focus states throughout.
+- **Custom 404 error page** — a themed "page not found" screen matching the site's night-to-dawn design, so users who hit a broken link still get a calm, on-brand experience with a clear way back home.
 
 ---
 
@@ -97,6 +98,7 @@ Wireframes were created in **Balsamiq** before development began, to plan the la
 - **[Google Gemini ("Nano Banana")](https://gemini.google.com/)** — used to generate the custom imagery and favicon graphic used on the site.
 - **[Git](https://git-scm.com/)** — used for version control, committing changes locally throughout development.
 - **[GitHub](https://github.com/)** — used to store the project's code remotely and to deploy the live site via GitHub Pages.
+- **[Favicon.io](https://favicon.io/)** — used to generate the favicon files (`apple-touch-icon.png`, `favicon-32x32.png`, `favicon-16x16.png`) in multiple sizes for cross-browser and cross-device support.
 
 ---
 
@@ -139,6 +141,7 @@ A frequent user is likely to revisit the page occasionally as a quick reminder o
 - A large amount of testing was carried out to ensure that all navigation links and resource links worked correctly and pointed to the right destination.
 - Friends and family members were asked to review the site and its documentation to point out any bugs or user experience issues.
 - AI tools were used throughout development to help debug layout and JavaScript issues, and to help generate some of the page's interactive animations (such as the scroll-based navigation highlighting and card hover effects), which were then reviewed and adjusted manually.
+- The custom 404 page was tested by manually navigating to a non-existent URL, to confirm it displays correctly and that the "Back to home" link works as expected.
 
 ---
 
@@ -155,6 +158,7 @@ The site was deployed to GitHub Pages using the following steps:
 5. Under **Branch**, select **main** and the **/ (root)** folder, then click **Save**.
 6. GitHub will build the page; after a few minutes, refresh the Pages settings screen to see the live link displayed at the top of the section.
 7. The live link can now be shared and should be added to the top of this README.
+8. A custom `404.html` page is included in the root of the repository. GitHub Pages automatically serves this file whenever a visitor requests a URL that doesn't exist, with no additional configuration required.
 
 The live link can be found here: **[https://amirmhmdi.github.io/mental-health-awareness/](https://amirmhmdi.github.io/mental-health-awareness/)**
 
